@@ -6,7 +6,7 @@ const User = ({ user }) => {
 
   return (
     <div className="User">
-      <Link to={`/real-world/${login}`}>
+      <Link to={`/crm/${login}`}>
         <img src={avatarUrl} alt={login} width="72" height="72" />
         <h3>
           {login} {name && <span>({name})</span>}
