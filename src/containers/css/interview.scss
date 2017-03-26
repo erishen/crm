@@ -1,0 +1,51 @@
+#interview_div {
+    margin:0;
+    padding:10px;
+
+    #demo {
+        width: 0;
+        height: 0;
+        border-width: 20px;
+        border-style: solid;
+        border-color: transparent transparent red transparent;
+    }
+
+    #head{
+        margin-bottom: 10px;
+        height: 50px;
+        background-color: #999999
+    }
+
+    #main{
+        height: 500px;
+    }
+
+    #left{
+        width: 200px;
+        height: 100%;
+        float: left;
+        margin-right: -200px;
+        background-color:#FF9900
+    }
+    #mid{
+        width: auto;
+        height: 100%;
+        background: #00FF00;
+        margin: 0 220px;
+        border: 1px solid #000;
+    }
+    #right{
+        width: 200px;
+        height: 100%;
+        margin-left: -200px;
+        float: right;
+        background-color: #CCCC00
+    }
+    #foot{
+        margin-top: 10px;
+        clear: both;
+        height: 50px;
+        background-color: #CCCCCC
+    }
+}
+
