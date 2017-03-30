@@ -1,0 +1,17 @@
+#add_overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.8); }
+
+.add_content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+  .add_content .row {
+    border: 1px solid red; }
+
+/*# sourceMappingURL=overlay.css.map */

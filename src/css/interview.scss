@@ -43,10 +43,32 @@ a {
 #interview_div {
     min-width: 320px;
 
+    #topright_div {
+        float: right;
+        right: 5px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .menu_overlay {
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: black;
+        opacity: 0.9;
+        z-index: 100;
+    }
+
     .header,
     .footer {
         text-align: center;
         padding: 10px;
+    }
+
+    .togger_display {
+        display: block;
     }
 
     .sub,
@@ -74,6 +96,11 @@ a {
     }
 
     @media (min-width: $min_width) {
+        .menu_overlay,
+        .togger_display {
+            display: none;
+        }
+
         .main,
         .sub,
         .extra {

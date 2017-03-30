@@ -30,10 +30,26 @@ a:link, a:visited, a:hover, a:active {
 
 #interview_div {
   min-width: 320px; }
+  #interview_div #topright_div {
+    float: right;
+    right: 5px;
+    width: 30px;
+    height: 30px; }
+  #interview_div .menu_overlay {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 100; }
   #interview_div .header,
   #interview_div .footer {
     text-align: center;
     padding: 10px; }
+  #interview_div .togger_display {
+    display: block; }
   #interview_div .sub,
   #interview_div .extra {
     display: none; }
@@ -49,6 +65,9 @@ a:link, a:visited, a:hover, a:active {
   #interview_div .footer {
     clear: both; }
   @media (min-width: 600px) {
+    #interview_div .menu_overlay,
+    #interview_div .togger_display {
+      display: none; }
     #interview_div .main,
     #interview_div .sub,
     #interview_div .extra {
