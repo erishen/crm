@@ -1,40 +1,72 @@
+.contentContainer {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  text-overflow: "hidden";
+  padding: 10px;
+  border: 1px solid black; }
+
+.contentCenter {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none; }
+
+#demo {
+  width: 0;
+  height: 0;
+  border-width: 20px;
+  border-style: solid;
+  border-color: transparent transparent red transparent; }
+
 #interview_div {
-  margin: 0;
-  padding: 10px; }
-  #interview_div #demo {
-    width: 0;
-    height: 0;
-    border-width: 20px;
-    border-style: solid;
-    border-color: transparent transparent red transparent; }
-  #interview_div #head {
-    margin-bottom: 10px;
-    height: 50px;
-    background-color: #999999; }
-  #interview_div #main {
-    height: 500px; }
-  #interview_div #left {
-    width: 200px;
-    height: 100%;
-    float: left;
-    margin-right: -200px;
-    background-color: #FF9900; }
-  #interview_div #mid {
-    width: auto;
-    height: 100%;
-    background: #00FF00;
-    margin: 0 220px;
-    border: 1px solid #000; }
-  #interview_div #right {
-    width: 200px;
-    height: 100%;
-    margin-left: -200px;
-    float: right;
-    background-color: #CCCC00; }
-  #interview_div #foot {
-    margin-top: 10px;
-    clear: both;
-    height: 50px;
-    background-color: #CCCCCC; }
+  min-width: 320px; }
+  #interview_div .header,
+  #interview_div .footer {
+    text-align: center;
+    padding: 10px; }
+  #interview_div .sub,
+  #interview_div .extra {
+    display: none; }
+  #interview_div .main {
+    width: 100%;
+    min-height: 600px;
+    padding: 10px; }
+  #interview_div .main-inner {
+    margin-left: 0px;
+    margin-right: 0px; }
+    #interview_div .main-inner section {
+      margin-bottom: 10px; }
+  #interview_div .footer {
+    clear: both; }
+  @media (min-width: 600px) {
+    #interview_div .main,
+    #interview_div .sub,
+    #interview_div .extra {
+      float: left;
+      display: block;
+      padding: 10px; }
+    #interview_div .main-inner {
+      margin-left: 200px;
+      margin-right: 220px; }
+      #interview_div .main-inner section {
+        margin-bottom: 10px; }
+    #interview_div .sub {
+      width: 200px;
+      margin-left: -100%;
+      min-height: 100px; }
+    #interview_div .extra {
+      width: 220px;
+      margin-left: -220px;
+      min-height: 100px; } }
 
 /*# sourceMappingURL=interview.css.map */
